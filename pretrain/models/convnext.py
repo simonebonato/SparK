@@ -12,7 +12,7 @@ import torch.nn as nn
 from timm.models.layers import trunc_normal_
 from timm.models.registry import register_model
 
-from encoder import SparseConvNeXtBlock, SparseConvNeXtLayerNorm
+from ..encoder import SparseConvNeXtBlock, SparseConvNeXtLayerNorm
 
 
 class ConvNeXt(nn.Module):

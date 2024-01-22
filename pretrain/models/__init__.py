@@ -10,9 +10,8 @@ from timm.loss import SoftTargetCrossEntropy
 from timm.layers import drop
 
 
-from models.convnext import ConvNeXt
-from models.resnet import ResNet
-from models.custom import YourConvNet
+from .convnext import ConvNeXt
+from .resnet import ResNet
 _import_resnets_for_timm_registration = (ResNet,)
 
 
