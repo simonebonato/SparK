@@ -122,7 +122,6 @@ class PretrainingDatasetSparK:
 
         if self.in_channels == 1:
             image_tensor = image_tensor[0:1]
-
         return image_tensor
 
 
@@ -150,7 +149,7 @@ def build_dataset_to_pretrain(dataset_path, input_size) -> Dataset:
     # dataset_path has to be either "4k" or "test", and that is set in the args
     image_shape = [768, 1024]
     unlabelled = "bw"
-    in_channels = 3
+    in_channels = 1
     dataset_train = PretrainingDatasetSparK(
         dataset=dataset_path,
         image_shape=image_shape,
