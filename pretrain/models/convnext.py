@@ -123,13 +123,13 @@ class ConvNeXt(nn.Module):
 
 @register_model
 def convnext_tiny(pretrained=False, in_22k=False, **kwargs):
-    model = ConvNeXt(depths=[3, 3, 9, 3], dims=[96, 192, 384, 768], **kwargs)
+    model = ConvNeXt(depths=[3, 3, 9, 3], dims=[96, 192, 384, 768], in_chans=1, **kwargs)
     return model
 
 
 @register_model
 def convnext_small(pretrained=False, in_22k=False, **kwargs):
-    model = ConvNeXt(depths=[3, 3, 27, 3], dims=[96, 192, 384, 768], **kwargs)
+    model = ConvNeXt(depths=[3, 3, 27, 3], dims=[96, 192, 384, 768], in_chans=1, **kwargs)
     return model
 
 
